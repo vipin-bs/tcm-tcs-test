@@ -1,0 +1,83 @@
+{
+  "report_meta": {
+    "report_name": "Healing Report-AI agent authoring for Automate(Latest) #7",
+    "build_name": "AI Agent Authoring #7",
+    "build_uuid": "81yobvicuiuozd1bncaeegvubey7rbl8naevwets",
+    "build_number": 235,
+    "user": "john.doe",
+    "healing_build_status": "Healed",
+    "metrics": {
+      "distinct_locators_healed_count": 12,
+      "total_distinct_locators_healed": 77,
+      "distinct_locators_healed_percentage": 15.5,
+      "tests_stabilized_count": 10,
+      "total_tests_stabilized": 12,
+      "tests_stabilized_percentage": 83.3
+    }
+  },
+  "healing_logs": [
+    {
+      "session_id": "943258666ff8cdffdc4bc8c597a5103735dc1307",
+      "session_name": null,
+      "product": "automate",
+      "os": "maccat",
+      "device_version": "14.0",
+      "device_name": "Samsung Device",
+      "browser": "chrome",
+      "browser_version": null,
+      "healed_selectors": [
+        {
+          "original_locator": {
+            "type": "xpath",
+            "value": "//div[@id='xpath-form']/input"
+          },
+          "timestamp": "2026-01-27T12:26:11.597Z",
+          "healed_locator": {
+            "type": "css selector",
+            "value": "input[id=\"xpath-input-heal\"]"
+          },
+          "healing_thought": "hello this is test healing thought",
+          "healed_element_screenshot_url": "https://automate.browserstack.com/s3-debug/browserstack-debug-screenshots-prod-euw1/885610134158e85e29558ab99938eda836cbf5fe/screenshot-selenium-4b185dc1e5.png"
+        }
+      ]
+    },
+    {
+      "session_id": "vipin456",
+      "session_name": null,
+      "product": "automate",
+      "os": "maccat",
+      "device_version": "13.0",
+      "device_name": "Google Device",
+      "browser": "chrome",
+      "browser_version": null,
+      "healed_selectors": [
+        {
+          "original_locator": {
+            "type": "xpath",
+            "value": "//*[@id='username']"
+          },
+          "timestamp": "2026-01-20T06:34:43.113Z",
+          "healed_locator": {
+            "type": "css selector",
+            "value": "input[name=\"username\"]"
+          },
+          "healing_thought": "The ID changed from 'submit-btn' to 'checkout-submit-btn-v2'. Verified position and text match.",
+          "healed_element_screenshot_url": "https://automate.browserstack.com/s3-debug/browserstack-debug-screenshots-prod-euw1/885610134158e85e29558ab99938eda836cbf5fe/screenshot-selenium-4b185dc1e5.png"
+        },
+        {
+          "original_locator": {
+            "type": "xpath",
+            "value": "//*[@id='username']"
+          },
+          "timestamp": "2026-01-20T06:34:52.842Z",
+          "healed_locator": {
+            "type": "css selector",
+            "value": "input[name=\"username\"]"
+          },
+          "healing_thought": "I noticed the text for this section changed from 'Pay & Compensation' to 'Paie et rémunération' due to a language change...",
+          "healed_element_screenshot_url": "https://automate.browserstack.com/s3-debug/browserstack-debug-screenshots-prod-euw1/885610134158e85e29558ab99938eda836cbf5fe/screenshot-selenium-4b185dc1e5.png"
+        }
+      ]
+    }
+  ]
+}
